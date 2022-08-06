@@ -1,0 +1,33 @@
+<body>
+
+    <div class="card">
+        <h1>Hola mundoooooooooooooooooooooooooooooooooooooooooooooooooooooooo</h1>
+    </div>
+
+
+
+
+    <div>
+        <h1>Hola seamundoooooooooooooooooooooooooooooooooooooooooooooooooooooooo</h1>
+    </div>
+
+
+
+
+    <div class="form-group row">
+        <label class="col-sm-3 control-label">Tipo de solicitud (Turno) : </label>
+        <br>
+         <div class="col-sm-9">
+         <div class="input-group">
+          <select class="form-control"
+                  formControlName="idsoldot">
+               <option value=""></option> 
+               <option *ngFor="let s of Listturnos"
+                [value]="s.idparametros">
+                 {{ s.Nombre }}
+               </option>
+            </select>
+          </div>
+        </div>
+        </div>
+</body>
